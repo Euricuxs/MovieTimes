@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MovieTimes (UAS)</string>
+    <string name="input_the_movie_title">Input the movie title...</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="noitem">No saved movies</string>
+    <string name="search">Search</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDE1"
+    android:padding="10dp"
+    android:id="@+id/relativeLayoutSavedTab">
+
+        <TextView
+            android:id="@+id/ketSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List of your saved movies"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/ketPull"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(Pull to refresh)"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_below="@+id/ketSave"/>
+
+        <TextView
+            android:id="@+id/ketEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ketPull">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recViewListSaved"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ketSave"
+            android:layout_marginTop="20dp"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
